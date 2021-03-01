@@ -25,6 +25,8 @@ for (let menuHeaderLink of menuHeaderLinks) {
 				menuHeaderLink.classList.remove('active');
 			};
 			this.classList.add('active');
+			burger.classList.remove('active');
+			menuHeaderList.classList.remove('active');
 		}
 
 		sectionId.scrollIntoView({
