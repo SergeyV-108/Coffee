@@ -7,7 +7,6 @@ headerBtn.onclick = function () {
 	headerVideo.classList.toggle('active');
 	headerBtn.classList.toggle('active');
 }
-
 //===========================================================
 //====== Навигация при клике по меню menu-header__list ======
 
@@ -84,4 +83,11 @@ pageScrollBtn.onclick = function () {
 	});
 }
 
+//===========================================================
+// ================= Инициализация анимации =================
+AOS.init({
+	disable: 'tablet',
+	disable: 'mobile',
+	disable: 'phone',
+});
 //===========================================================
