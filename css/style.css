@@ -629,6 +629,13 @@ body {
   font-weight: bold;
 }
 
+.fa-shopping-cart {
+  font-size: 18px;
+  color: #fff;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
 .burger {
   display: none;
 }
