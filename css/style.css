@@ -92,6 +92,7 @@ h6 {
   src: url("../fonts/Montserrat/Montserrat-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Black.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* font-family: 'Nunito'; */
@@ -101,6 +102,7 @@ h6 {
   src: local("Nunito Regular"), local("Nunito-Regular"), url("../fonts/Nunito/Nunito-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Nunito/Nunito-Regular.woff2") format("woff2"), url("../fonts/Nunito/Nunito-Regular.woff") format("woff"), url("../fonts/Nunito/Nunito-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -109,6 +111,7 @@ h6 {
   src: local("Nunito Bold"), local("Nunito-Bold"), url("../fonts/Nunito/Nunito-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Nunito/Nunito-Bold.woff2") format("woff2"), url("../fonts/Nunito/Nunito-Bold.woff") format("woff"), url("../fonts/Nunito/Nunito-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -117,6 +120,7 @@ h6 {
   src: local("Nunito SemiBold"), local("Nunito-SemiBold"), url("../fonts/Nunito/Nunito-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Nunito/Nunito-SemiBold.woff2") format("woff2"), url("../fonts/Nunito/Nunito-SemiBold.woff") format("woff"), url("../fonts/Nunito/Nunito-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -125,6 +129,7 @@ h6 {
   src: local("Nunito Light Italic"), local("Nunito-LightItalic"), url("../fonts/Nunito/Nunito-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Nunito/Nunito-LightItalic.woff2") format("woff2"), url("../fonts/Nunito/Nunito-LightItalic.woff") format("woff"), url("../fonts/Nunito/Nunito-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
+  font-display: swap;
 }
 
 /* ====================================== */
@@ -1408,3 +1413,15 @@ body {
 }
 
 /* ===================== footer end ================= */
+/* ===================== aos ===================== */
+[data-aos="rotate-animation"] {
+  -webkit-transform: scale(0) rotateZ(0);
+          transform: scale(0) rotateZ(0);
+}
+
+[data-aos="rotate-animation"].aos-animate {
+  -webkit-transform: scale(1) rotateZ(360deg);
+          transform: scale(1) rotateZ(360deg);
+}
+
+/* ===================== aos end ================= */
